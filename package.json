@@ -4,6 +4,7 @@
 	"description": "n8n node to call NASA's APOD and Mars Rover Photo services.",
 	"license": "MIT",
 	"homepage": "",
+	"private": false,
 	"keywords": [
 		"n8n-community-node-package"
 	],
