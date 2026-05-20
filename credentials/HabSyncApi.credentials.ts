@@ -1,0 +1,48 @@
+import {
+	IAuthenticateGeneric,
+	ICredentialTestRequest,
+	ICredentialType,
+	INodeProperties,
+} from 'n8n-workflow';
+
+export class HabSyncApi implements ICredentialType {
+	name = 'habSyncApi';
+	displayName = 'HabSync API';
+	// Uses the link to this tutorial as an example
+	// Replace with your own docs links when building your own nodes
+	documentationUrl = 'my-docs-link';
+	properties: INodeProperties[] = [
+		{
+			displayName: 'Base URL',
+			name: 'baseUrl',
+			type: 'string',
+			default: '',
+			required: true,
+		},
+		{
+			displayName: 'API Key',
+			name: 'apiKey',
+			type: 'string',
+			typeOptions: {
+				password: true,
+			},
+			default: '',
+			required: true,
+		},
+	];
+	authenticate: IAuthenticateGeneric = {
+		type: 'generic',
+		properties: {
+			qs: {
+				api_key: '={{$credentials.apiKey}}',
+			},
+		},
+	};
+	test: ICredentialTestRequest = {
+		request: {
+			baseURL: '={{$credentials.baseUrl}}',
+			url: '/health',
+			method: 'GET',
+		},
+	};
+}
