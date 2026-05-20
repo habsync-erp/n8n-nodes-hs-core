@@ -1,5 +1,6 @@
 import {
 	IAuthenticateGeneric,
+	Icon,
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
@@ -8,9 +9,10 @@ import {
 export class HabSyncApi implements ICredentialType {
 	name = 'habSyncApi';
 	displayName = 'HabSync API';
+	icon: Icon = { light: 'file:../icons/auth-fingerprint.svg', dark: 'file:../icons/auth-fingerprint.dark.svg' };
 	// Uses the link to this tutorial as an example
 	// Replace with your own docs links when building your own nodes
-	documentationUrl = 'my-docs-link';
+	documentationUrl = 'https://example.com/docs/auth';
 	properties: INodeProperties[] = [
 		{
 			displayName: 'Base URL',

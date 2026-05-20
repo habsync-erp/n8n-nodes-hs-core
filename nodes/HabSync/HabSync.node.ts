@@ -6,7 +6,7 @@ export class HabSync implements INodeType {
 		// Basic node details will go here
 		displayName: 'HabSync',
 		name: 'habSync',
-		icon: 'file:habsync.png',
+		icon: 'file:habsync.svg',
 		group: ['input'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
@@ -58,7 +58,7 @@ export class HabSync implements INodeType {
 				},
 				options: [
 					{
-						name: 'Get todays stock move report',
+						name: 'Get Todays Stock Move Report',
 						value: 'inve_get_todays_stock_move_report',
 						action: 'Get todays stock move report',
 						description: 'Get get todays stock move report from your HabSync instance API',
