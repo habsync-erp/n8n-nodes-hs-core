@@ -72,7 +72,7 @@ export class HabSync implements INodeType {
 				],
 				default: 'inve_get_todays_stock_move_report',
 			},
-			// Optional/additional fields will go here
+			// Optional/additional fields will go here//
 		],
 	};
 
