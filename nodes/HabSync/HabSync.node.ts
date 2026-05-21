@@ -36,12 +36,17 @@ export class HabSync implements INodeType {
 		},
 		//
 		properties: [
+			// Resource will go here
 			{
 				displayName: 'Resource',
 				name: 'resource',
 				type: 'options',
 				noDataExpression: true,
 				options: [
+					{
+						name: 'Product',
+						value: 'product',
+					},
 					{
 						name: 'Report',
 						value: 'report',
@@ -50,6 +55,32 @@ export class HabSync implements INodeType {
 				default: 'report',
 			},
 			// Operations will go here
+			{
+				displayName: 'Operation',
+				name: 'operation',
+				type: 'options',
+				noDataExpression: true,
+				displayOptions: {
+					show: {
+						resource: ['product'],
+					},
+				},
+				options: [
+					{
+						name: 'Get Low Stock Products',
+						value: 'getLowStockProducts',
+						action: 'Get low stock products',
+						description: 'Get low stock products from your HabSync instance API',
+						routing: {
+							request: {
+								url: '/product/getLowStockProducts',
+								method: 'GET',
+							},
+						},
+					},
+				],
+				default: 'getLowStockProducts',
+			},
 			{
 				displayName: 'Operation',
 				name: 'operation',
