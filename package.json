@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-habsync",
-	"version": "1.0.5-5",
+	"version": "1.0.5-6",
 	"description": "n8n node to call NASA's APOD and Mars Rover Photo services.",
 	"license": "MIT",
 	"homepage": "",
