@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 300 300" height="300" width="300">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" y2="255" x2="255" y1="45" x1="45" id="darkBg">
+      <stop stop-color="#1E2937" offset="0%"></stop>
+      <stop stop-color="#0F172A" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" y2="200" x2="145" y1="110" x1="90" id="HGradientDark">
+      <stop stop-color="#60A5FA" offset="0%"></stop>
+      <stop stop-color="#93C5FD" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" y2="205" x2="225" y1="110" x1="165" id="SGradientDark">
+      <stop stop-color="#34D399" offset="0%"></stop>
+      <stop stop-color="#6EE7B7" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+
+  <circle stroke-width="16" stroke="#334155" fill="url(#darkBg)" r="142" cy="150" cx="150"></circle>
+
+  
+  <text letter-spacing="-9px" text-anchor="middle" fill="url(#HGradientDark)" font-weight="900" font-size="138" font-family="Arial Black, sans-serif" y="177" x="117">H</text>
+
+  
+  <text letter-spacing="-9px" text-anchor="middle" fill="url(#SGradientDark)" font-weight="900" font-size="138" font-family="Arial Black, sans-serif" y="177" x="198">S</text>
+
+  
+  <circle opacity="0.35" stroke-width="10" stroke="#34D399" fill="none" r="78" cy="158" cx="198"></circle>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 300 300" height="300" width="300">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" y2="240" x2="240" y1="60" x1="60" id="lightBg">
+      <stop stop-color="#F0F9FF" offset="0%"></stop>
+      <stop stop-color="#E0F2FE" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" y2="205" x2="210" y1="95" x1="90" id="shieldGrad">
+      <stop stop-color="#3B82F6" offset="0%"></stop>
+      <stop stop-color="#1E40AF" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" y2="210" x2="210" y1="165" x1="165" id="keyGrad">
+      <stop stop-color="#10B981" offset="0%"></stop>
+      <stop stop-color="#047857" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+
+  
+  <circle stroke-width="18" stroke="#E0F2FE" fill="url(#lightBg)" r="142" cy="150" cx="150"></circle>
+
+  
+  <path stroke-width="12" stroke="#1E40AF" fill="url(#shieldGrad)" d="M150 78 L98 105 L98 165 C98 200 120 225 150 235 C180 225 202 200 202 165 L202 105 L150 78Z"></path>
+
+  
+  <text letter-spacing="-3px" text-anchor="middle" fill="#F1F5F9" font-weight="900" font-size="62" font-family="Arial Black, sans-serif" y="165" x="150">HS</text>
+
+  
+  <path stroke-width="8" stroke="#047857" fill="url(#keyGrad)" d="M195 175 L225 175 L225 195 L210 195 L210 205 L195 205 Z"></path>
+  <circle fill="#F1F5F9" r="12" cy="185" cx="205"></circle>
+</svg>

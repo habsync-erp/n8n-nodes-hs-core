@@ -9,7 +9,7 @@ import {
 export class HabSyncApi implements ICredentialType {
 	name = 'habSyncApi';
 	displayName = 'HabSync API';
-	icon: Icon = { light: 'file:../icons/auth-fingerprint.svg', dark: 'file:../icons/auth-fingerprint.dark.svg' };
+	icon: Icon = { light: 'file:../icons/hs.auth.light.1.svg', dark: 'file:../icons/hs.auth..dark.1.svg' };
 	// Uses the link to this tutorial as an example
 	// Replace with your own docs links when building your own nodes
 	documentationUrl = 'https://example.com/docs/auth';

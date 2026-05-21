@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 300 300" height="300" width="300">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" y2="250" x2="250" y1="50" x1="50" id="darkBg">
+      <stop stop-color="#1E2937" offset="0%"></stop>
+      <stop stop-color="#0F172A" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" y2="205" x2="210" y1="95" x1="90" id="shieldGradDark">
+      <stop stop-color="#60A5FA" offset="0%"></stop>
+      <stop stop-color="#93C5FD" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" y2="210" x2="210" y1="165" x1="165" id="keyGradDark">
+      <stop stop-color="#34D399" offset="0%"></stop>
+      <stop stop-color="#6EE7B7" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+
+  
+  <circle stroke-width="18" stroke="#334155" fill="url(#darkBg)" r="142" cy="150" cx="150"></circle>
+
+  
+  <path stroke-width="12" stroke="#1E40AF" fill="url(#shieldGradDark)" d="M150 78 L98 105 L98 165 C98 200 120 225 150 235 C180 225 202 200 202 165 L202 105 L150 78Z"></path>
+
+  
+  <text letter-spacing="-3px" text-anchor="middle" fill="#0F172A" font-weight="900" font-size="62" font-family="Arial Black, sans-serif" y="165" x="150">HS</text>
+
+  
+  <path stroke-width="8" stroke="#047857" fill="url(#keyGradDark)" d="M195 175 L225 175 L225 195 L210 195 L210 205 L195 205 Z"></path>
+  <circle fill="#0F172A" r="12" cy="185" cx="205"></circle>
+</svg>

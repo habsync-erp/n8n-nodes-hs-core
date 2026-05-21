@@ -6,7 +6,11 @@ export class HabSync implements INodeType {
 		// Basic node details will go here
 		displayName: 'HabSync',
 		name: 'habSync',
-		icon: 'file:habsync.svg',
+		// icon: 'file:habsync.svg',
+		icon: {
+			light: 'file:hs.light.2.svg',
+			dark: 'file:hs.dark.2.svg',
+		},
 		group: ['input'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
@@ -75,5 +79,4 @@ export class HabSync implements INodeType {
 			// Optional/additional fields will go here//
 		],
 	};
-
 }
