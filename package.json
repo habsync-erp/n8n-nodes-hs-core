@@ -1,20 +1,24 @@
 {
 	"name": "n8n-nodes-habsync",
 	"version": "1.0.5-6",
-	"description": "n8n node to call NASA's APOD and Mars Rover Photo services.",
+	"description": "Habsync integration nodes for n8n - enabling ERP automation, inventory intelligence, and external service workflows.",
 	"license": "MIT",
 	"homepage": "",
 	"private": false,
 	"keywords": [
-		"n8n-community-node-package"
+		"n8n-community-node-package",
+		"n8n",
+		"erp",
+		"automation",
+		"habsync"
 	],
 	"author": {
-		"name": "habsync",
-		"email": "habsync@example.com"
+		"name": "Habsync Platform",
+		"email": "dev@habsync.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kirubelJ/HabSync-N8N.git"
+		"url": "https://github.com/habsync-erp/n8n-nodes-hs-core.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",

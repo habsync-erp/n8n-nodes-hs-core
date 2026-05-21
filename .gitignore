@@ -1,2 +1,7 @@
+# build
 dist
+# modules
 node_modules
+
+# vs code
+.vscode
