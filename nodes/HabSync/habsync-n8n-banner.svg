@@ -1,0 +1,70 @@
+<!-- This is a high-quality banner concept. Copy the full SVG code below into a file named habsync-n8n-banner.svg, open it in a browser, then right-click → Save as PNG (recommended 1920x600 or larger). -->
+
+<svg width="1920" height="600" viewBox="0 0 1920 600" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Dark gradient background similar to n8n style -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E2937"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="habGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Subtle connecting lines (automation theme) -->
+  <path d="M300 300 Q600 150 950 320 Q1300 480 1650 280" fill="none" stroke="#34D399" stroke-width="4" opacity="0.15"/>
+  <path d="M250 420 Q700 280 1050 450 Q1500 220 1700 380" fill="none" stroke="#60A5FA" stroke-width="3" opacity="0.12"/>
+
+  <!-- Left side: HabSync ERP branding -->
+  <text x="180" y="220" font-family="Arial Black, sans-serif" font-size="92" font-weight="900" fill="url(#habGrad)" filter="url(#glow)">HabSync</text>
+  <text x="180" y="300" font-family="Arial, sans-serif" font-size="48" fill="#94A3B8">ERP</text>
+
+  <!-- Tagline -->
+  <text x="180" y="380" font-family="Arial, sans-serif" font-size="32" fill="#E2E8F0" opacity="0.95">Powerful ERP for Growing Businesses</text>
+  <text x="180" y="425" font-family="Arial, sans-serif" font-size="28" fill="#34D399">• Inventory • Sales • Finance • Operations</text>
+
+  <!-- HS Logo (consistent with previous icons) -->
+  <circle cx="280" cy="520" r="52" fill="#1E2937" stroke="#34D399" stroke-width="8"/>
+  <text x="280" y="530" font-family="Arial Black, sans-serif" font-size="58" font-weight="900" fill="#F1F5F9" text-anchor="middle" dominant-baseline="middle" letter-spacing="-4">HS</text>
+
+  <!-- Center: Integration + Automation -->
+  <text x="960" y="260" font-family="Arial Black, sans-serif" font-size="68" fill="#F1F5F9" text-anchor="middle">+</text>
+  
+  <!-- n8n branding -->
+  <g transform="translate(1050 180)">
+    <text x="0" y="70" font-family="Arial Black, sans-serif" font-size="82" fill="#EA4B71" font-weight="900">n8n</text>
+    <circle cx="55" cy="35" r="18" fill="#EA4B71"/>
+    <circle cx="55" cy="35" r="8" fill="#0F172A"/>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="960" y="355" font-family="Arial, sans-serif" font-size="36" fill="#CBD5E1" text-anchor="middle">Seamless Automation &amp; Workflow Sync</text>
+
+  <!-- Right side visual: ERP + n8n nodes -->
+  <!-- Simplified ERP dashboard representation -->
+  <rect x="1350" y="180" width="420" height="260" rx="16" fill="#1E2937" stroke="#475569" stroke-width="12"/>
+  <rect x="1380" y="210" width="160" height="45" rx="6" fill="#3B82F6"/>
+  <rect x="1380" y="275" width="360" height="25" rx="4" fill="#334155"/>
+  <rect x="1380" y="310" width="360" height="25" rx="4" fill="#334155"/>
+  <rect x="1380" y="345" width="360" height="25" rx="4" fill="#334155"/>
+
+  <!-- Connecting nodes -->
+  <circle cx="1250" cy="280" r="28" fill="#10B981"/>
+  <text x="1250" y="292" font-family="Arial Black" font-size="32" fill="#0F172A" text-anchor="middle" dominant-baseline="middle">⚡</text>
+
+  <!-- Final call to action -->
+  <text x="960" y="510" font-family="Arial, sans-serif" font-size="26" fill="#94A3B8" text-anchor="middle">Automate without limits with HabSync ERP + n8n</text>
+</svg>
