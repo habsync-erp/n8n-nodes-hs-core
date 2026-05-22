@@ -48,6 +48,14 @@ export class HabSync implements INodeType {
 						value: 'product',
 					},
 					{
+						name: 'Warehouse',
+						value: 'warehouse',
+					},
+					{
+						name: 'Warehouse Location',
+						value: 'warehouse_location',
+					},
+					{
 						name: 'Report',
 						value: 'report',
 					},
@@ -55,6 +63,7 @@ export class HabSync implements INodeType {
 				default: 'report',
 			},
 			// Operations will go here
+			// 1. Product-Resource-Operation
 			{
 				displayName: 'Operation',
 				name: 'operation',
@@ -78,9 +87,90 @@ export class HabSync implements INodeType {
 							},
 						},
 					},
+					{
+						name: 'Get Recently Added Products',
+						value: 'getRecentlyAddedProducts',
+						action: 'Get recently added products',
+						description: 'Retrieve the latest 5 products added to inventory.',
+						routing: {
+							request: {
+								url: `/product/getRecentlyAddedProducts`,
+								method: 'GET',
+							},
+						},
+					},
 				],
 				default: 'getLowStockProducts',
 			},
+			// 2. Warehouse-Resource-Operation
+			{
+				displayName: 'Operation',
+				name: 'operation',
+				type: 'options',
+				noDataExpression: true,
+				displayOptions: {
+					show: {
+						resource: ['warehouse'],
+					},
+				},
+				options: [
+					{
+						name: 'Get Warehouse Count',
+						value: 'getWarehouseCount',
+						action: 'Get warehouse count',
+						description: 'Retrieve the total number of warehouses from your HabSync instance',
+						routing: {
+							request: {
+								url: '/warehouse/getWarehouseCount',
+								method: 'GET',
+							},
+						},
+					},
+				],
+				default: 'getWarehouseCount',
+			},
+			// 3. WH-Location Resource-Operations
+			{
+				displayName: 'Operation',
+				name: 'operation',
+				type: 'options',
+				noDataExpression: true,
+				displayOptions: {
+					show: {
+						resource: ['warehouse_location'],
+					},
+				},
+				options: [
+					{
+						name: 'Get Warehouse Location Count',
+						value: 'getWarehouseLocationCount',
+						action: 'Get warehouse location count',
+						description:
+							'Retrieve the total number of warehouse locations from your HabSync instance',
+						routing: {
+							request: {
+								url: '/warehouse_location/getWarehouseLocationCount',
+								method: 'GET',
+							},
+						},
+					},
+					{
+						name: 'Get Location Stock Distribution',
+						value: 'getLocationStockDistribution',
+						action: 'Get location stock distribution',
+						description:
+							'Retrieve stock distribution across warehouse locations from your HabSync instance.',
+						routing: {
+							request: {
+								url: '/warehouse_location/getLocationStockDistribution',
+								method: 'GET',
+							},
+						},
+					},
+				],
+				default: 'getWarehouseCount',
+			},
+			// 4. Report-Resource-Operation
 			{
 				displayName: 'Operation',
 				name: 'operation',
@@ -94,12 +184,12 @@ export class HabSync implements INodeType {
 				options: [
 					{
 						name: 'Get Todays Stock Move Report',
-						value: 'inve_get_todays_stock_move_report',
+						value: 'getTodaysStockMoveReport',
 						action: 'Get todays stock move report',
 						description: 'Get get todays stock move report from your HabSync instance API',
 						routing: {
 							request: {
-								url: '/report/report1',
+								url: '/report/getTodaysStockMoveReport',
 								method: 'GET',
 							},
 						},
