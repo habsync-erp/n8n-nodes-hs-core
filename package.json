@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-habsync",
-	"version": "1.0.9",
+	"version": "1.1.0",
 	"description": "Habsync integration nodes for n8n - enabling ERP automation, inventory intelligence, and external service workflows.",
 	"license": "MIT",
 	"homepage": "",
