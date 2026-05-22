@@ -91,7 +91,7 @@ export class HabSync implements INodeType {
 						name: 'Get Recently Added Products',
 						value: 'getRecentlyAddedProducts',
 						action: 'Get recently added products',
-						description: 'Retrieve the latest 5 products added to inventory.',
+						description: 'Retrieve the latest 5 products added to inventory',
 						routing: {
 							request: {
 								url: `/product/getRecentlyAddedProducts`,
@@ -159,7 +159,7 @@ export class HabSync implements INodeType {
 						value: 'getLocationStockDistribution',
 						action: 'Get location stock distribution',
 						description:
-							'Retrieve stock distribution across warehouse locations from your HabSync instance.',
+							'Retrieve stock distribution across warehouse locations from your HabSync instance',
 						routing: {
 							request: {
 								url: '/warehouse_location/getLocationStockDistribution',
@@ -168,7 +168,7 @@ export class HabSync implements INodeType {
 						},
 					},
 				],
-				default: 'getWarehouseCount',
+				default: 'getWarehouseLocationCount',
 			},
 			// 4. Report-Resource-Operation
 			{
@@ -195,7 +195,7 @@ export class HabSync implements INodeType {
 						},
 					},
 				],
-				default: 'inve_get_todays_stock_move_report',
+				default: 'getTodaysStockMoveReport',
 			},
 			// Optional/additional fields will go here//
 		],
