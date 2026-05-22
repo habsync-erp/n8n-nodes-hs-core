@@ -1,4 +1,4 @@
-![Banner image](![alt text](./nodes//HabSync/habsync-n8n-banner.svg))
+![Banner image]![alt text](./nodes//HabSync/habsync-n8n-banner.svg)
 
 # HabSync n8n Nodes
 
@@ -34,7 +34,6 @@ Designed for multi-tenant SaaS and self-hosted ERP deployments.
 | Inventory Actions | Stock and inventory automation |
 | Reporting Actions | Scheduled and on-demand reports |
 | Notification Actions | Send alerts and notifications |
-| Approval Actions | Workflow approval automation |
 
 ---
 
@@ -55,13 +54,7 @@ Designed for multi-tenant SaaS and self-hosted ERP deployments.
 ### Notifications
 - Email alerts
 - Telegram notifications
-- Slack messages
 - ERP internal announcements
-
-### Approval Flows
-- Purchase approvals
-- Expense approvals
-- Multi-step workflows
 
 ---
 
@@ -69,14 +62,9 @@ Designed for multi-tenant SaaS and self-hosted ERP deployments.
 
 HabSync uses **Tenant API Keys** for secure access.
 
-You can generate API keys from:
-
-`HabSync Admin → Integrations → API Keys`
-
 ### Required Credentials
 
-- Tenant URL
-- API Key
+- HabSync n8n API Key
 
 ---
 
@@ -93,21 +81,6 @@ Install package:
 ```bash
 n8n-nodes-habsync
 ```
-
----
-
-## Self-Hosted Architecture
-
-HabSync supports:
-
-- Shared SaaS tenants
-- Tenant self-hosted deployments
-
-This allows organizations to:
-- Own their data
-- Run local automations
-- Integrate internal systems
-- Operate behind firewalls
 
 ---
 
@@ -136,8 +109,6 @@ This allows organizations to:
 Sync data between HabSync and external systems:
 
 - Products
-- Customers
-- Orders
 - Inventory movements
 
 ---
