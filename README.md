@@ -1,4 +1,4 @@
-![Banner image]![alt text](./nodes//HabSync/habsync-n8n-banner.svg)
+![Banner image](./nodes//HabSync/habsync-n8n-banner.svg)
 
 # HabSync n8n Nodes
 
@@ -36,6 +36,10 @@ Designed for multi-tenant SaaS and self-hosted ERP deployments.
 | Notification Actions | Send alerts and notifications |
 
 ---
+
+## Sample Workflows
+
+![Sample Workflow1](./nodes/HabSync/assets/screenshoots/Screenshot1.png)
 
 ## Example Use Cases
 
