@@ -14,7 +14,7 @@ export class HabSync implements INodeType {
 		group: ['input'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
-		description: 'Get data from NASAs API',
+		description: 'Automate with your habsync instance',
 		defaults: {
 			name: 'HabSync',
 		},
