@@ -39,7 +39,33 @@ Designed for multi-tenant SaaS and self-hosted ERP deployments.
 
 ## Sample Workflows
 
-![Sample Workflow1](./nodes/HabSync/assets/screenshoots/Screenshot1.png)
+### 1. AI-Powered Low Stock Email Alert
+
+This workflow automatically detects low stock products, summarizes the situation using AI, and emails a concise report to management.
+
+Flow:
+
+Schedule Trigger
+Fetch low stock products from HabSync
+Send data to AI Agent
+Summarize using Groq AI model
+Send summary via email
+
+![Sample Workflow1](./nodes/HabSync/assets/screenshoots/sample-template1.png)
+
+### 2. Daily Stock Movement XLS Report to Telegram
+This workflow generates a daily stock movement report, transforms the data into spreadsheet format, and delivers it directly to Telegram.
+
+Flow:
+
+Schedule Trigger
+Fetch today's stock movement report
+Split & transform report data
+Convert data to XLS/XLSX
+Send report to Telegram
+
+![Sample Workflow1](./nodes/HabSync/assets/screenshoots/sample-template2.png)
+![Sample Workflow1](./nodes/HabSync/assets/screenshoots/samele-template3.png)
 
 ## Example Use Cases
 
